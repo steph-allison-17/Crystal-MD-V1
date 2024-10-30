@@ -2,7 +2,7 @@ let handler = async m =>
   m.reply(
     `
 
-≡ 𝐋𝐀𝐙𝐀𝐂𝐊-𝐌𝐃 GROUPS
+≡ 𝑮𝑪𝒀𝑩𝑬𝑹 - 𝑩𝑶𝑻 GROUPS
 
 ─────────────
 ▢ Join public bot group and support
@@ -18,10 +18,10 @@ https://whatsapp.com/channel/0029VaFytPbAojYm7RIs6l1x
  https://whatsapp.com/channel/0029VaFytPbAojYm7RIs6l1x
 ─────────────
 ▢ *Owner instagram*
- https://instagram.com/Lazack_28
+ https://instagram.com/nyingi_official
 
 ▢ *YouTube*
-• https://www.youtube.com/@lazack_28
+• https://www.youtube.com/@gmaxtv
 
 
 `.trim()
