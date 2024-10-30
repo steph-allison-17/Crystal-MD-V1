@@ -6,7 +6,7 @@ import fs from 'fs'
 import dotenv from 'dotenv'
 dotenv.config()
 
-const ownervb = process.env.OWNERS || "255734980103"
+const ownervb = process.env.OWNERS || "255622053093"
 
 
 const ownerlist = ownervb.split(';');
@@ -23,9 +23,9 @@ for (let i = 0; i < ownerlist.length; i += 2) {
 
 //global.pairingNumber = "" //put your bot number here
 
-global.mods = ['255734980103', '255758868502']
-global.prems = ['255734980103', '255758868502', '255734980103']
-global.allowed = ['255734980103', '255734980103']
+global.mods = ['255734980103', '255622053093']
+global.prems = ['255734980103', '255622053093', '255622053093']
+global.allowed = ['255734980103', '255622053093']
 global.keysZens = ['c2459db922', '37CC845916', '6fb0eff124']
 global.keysxxx = keysZens[Math.floor(keysZens.length * Math.random())]
 global.keysxteammm = [
@@ -74,16 +74,16 @@ global.APIKeys = {
 // Sticker WM
 global.botname = process.env.BOTNAME
 global.premium = 'true'
-global.packname = '𝙇𝙖𝙯𝙖𝙘𝙠'
-global.author = '𝙡𝙖𝙯𝙖𝙘𝙠'
+global.packname = '𝐆𝐌𝐀𝐗'
+global.author = '𝐆𝐌𝐀𝐗'
 global.menuvid = ''
 global.igfg = ''
 global.dygp = ''
-global.fgsc = 'https://github.com/Lazack28/Lazack-Device'
-global.fgyt = 'https://youtube.com/@lazaromtaju'
-global.fgpyp = 'https://youtube.com/@lazaromtaju'
+global.fgsc = 'https://github.com/Gmaxhacker1/GCYBER-BOT'
+global.fgyt = 'https://youtube.com/@GMAXTV'
+global.fgpyp = 'https://youtube.com/@GMAXTV'
 global.fglog = ''
-global.thumb = fs.readFileSync('./jusorts/lazack.jpg')
+global.thumb = fs.readFileSync('./jusorts/Gmaxhacker1.jpg')
 
 global.wait = '*⌛ _Charging..._*\n*▰▰▰▱▱▱▱▱*'
 global.rwait = '⌛'
