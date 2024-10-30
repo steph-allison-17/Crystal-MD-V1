@@ -1,8 +1,8 @@
 FROM quay.io/gurusensei/gurubhay:latest
 
-RUN git clone https://github.com/Lazack28/Lazack-Device /root/lazack
+RUN git clone https://github.com/Gmaxhacker1/Gmax-Tech /root/gmax
 
-WORKDIR /root/lazack/
+WORKDIR /root/gmax/
 
 RUN npm install --platform=linuxmusl
 
