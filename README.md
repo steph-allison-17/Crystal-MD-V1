@@ -49,7 +49,9 @@
 
 ****MAIN DEV EDITOR****
 
+ [![Gmaxhacker1](https://github.com/Gmaxhacker1.png?size=100)](https://github.com/Gmaxhacker1)
  [![Lazack28](https://github.com/Lazack28.png?size=100)](https://github.com/Lazack28)
+ 
 
 ----------------------
 
