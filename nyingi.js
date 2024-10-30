@@ -7,7 +7,7 @@ import path from 'path'
 import { fileURLToPath } from 'url';
 
 figlet(
-  'LAZACK MD',
+  '𝐆𝐂𝐘𝐁𝐄𝐑 𝐁𝐎𝐓',
   {
     font: 'Ghost',
     horizontalLayout: 'default',
