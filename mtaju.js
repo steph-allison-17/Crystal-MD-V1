@@ -117,7 +117,7 @@ async function start(file) {
   })
 }
 
-start('lazack.js')
+start('gmax.js')
 
 process.on('unhandledRejection', () => {
   console.error(chalk.red(`Unhandled promise rejection. Bot will restart...`))
