@@ -1,4 +1,4 @@
-[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Rockstar-ExtraBold&color=F33A6A&lines=KARIBU+GCYBER+BOT+IMEANDALIWA+NA;GMAX+PAMOJA+NA+LAZACK28;ASANTE+KWA+KUTEMBELEA+REPO+WETU)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Rockstar-ExtraBold&color=F33A6A&lines=KARIBU+GCYBER+BOT+IMEANDALIWA+NA;+MR+GMAX+PAMOJA+NA+LAZACK28;ASANTE+KWA+KUTEMBELEA+REPO+YETU)](https://git.io/typing-svg)
 
 <img src="https://i.imgur.com/dBaSKWF.gif" height="90" width="100%">
 
@@ -57,11 +57,11 @@
 </h2>
    
  
-- *Lazack Bots are made by a student if you see any errors please submit a pull request`*
-- *I may help you in bot deployment and bot code editing if i have time to do so*
+-*cyber bots Tupo hapa kukusaidia Endapo utapata changomoto yeyote unaweza kuwasiliana nasi ili`*
+- *Ninaweza kukusaidia katika uwekaji wa roboti na uhariri wa msimbo wa roboti ikiwa nitapata muda wa kufanya hivyo*
 
 
 
 
 
-         CREDIT TO GURU & SILVA MD
+         CREDIT TO Mr Gmax & Lazack28
