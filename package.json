@@ -1,8 +1,8 @@
 {
-    "name": "LAZACK MD",
-    "version": "2.1.0",
+    "name": "𝐆𝐂𝐘𝐁𝐄𝐑-𝐁𝐎𝐓",
+    "version": "1.0.0",
     "description": "Advanced WhatsApp",
-    "main": "mtaju.js",
+    "main": "nyingi.js",
     "type": "module",
     "directories": {
         "lib": "lib",
