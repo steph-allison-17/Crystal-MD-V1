@@ -1,7 +1,7 @@
 let handler = async (m, { conn, text, usedPrefix, command }) => {
   // Sound
   let name = m.pushName || conn.getName(m.sender)
-  var vn = 'https://cdn.jsdelivr.net/gh/Lazack28/Lazack-md@main/media/Alive.mp3'
+  var vn = 'https://cdn.jsdelivr.net/gh/Gmaxhacker1/Gyber-bot@main/media/Alive.mp3'
   let url = 'https://github.com/Lazack28/Lazack-md'
   let murl = 'https://youtu.be/3j_EIP--2t8?si=4TFWV0On6Bl1wr-e'
   let img = 'https://i.imgur.com/QMyKIPq.jpeg'
@@ -30,8 +30,8 @@ let handler = async (m, { conn, text, usedPrefix, command }) => {
     contextInfo: {
       mentionedJid: [m.sender],
       externalAdReply: {
-        title: 'LAZACK MD ALIVE',
-        body: 'Lazack md',
+        title: 'GCYBER BOT ALIVE',
+        body: 'Gcyber Bot',
         thumbnailUrl: img,
         sourceUrl: 'https://chat.whatsapp.com/IIpL6gf6dcq4ial8gaJLE9',
         mediaType: 1,
