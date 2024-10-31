@@ -1,6 +1,6 @@
 FROM quay.io/gurusensei/gurubhay:latest
 
-RUN git clone https://github.com/Gmaxhacker1/Gmax-Tech /root/gmax
+RUN git clone https://github.com/Gmaxhacker1/GCYBER-Md-v1 /root/gmax
 
 WORKDIR /root/gmax/
 
