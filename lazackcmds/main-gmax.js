@@ -28,6 +28,6 @@ https://whatsapp.com/channel/0029VaFytPbAojYm7RIs6l1x
   )
 handler.help = ['ruth']
 handler.tags = ['main']
-handler.command = ['groups', 'grouplazack', 'lazackgp', 'sgp', 'grp']
+handler.command = ['groups', 'groupgmax', 'gmaxgp', 'sgp', 'grp']
 
 export default handler
