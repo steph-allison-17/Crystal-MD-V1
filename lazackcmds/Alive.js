@@ -30,8 +30,8 @@ let handler = async (m, { conn, text, usedPrefix, command }) => {
     contextInfo: {
       mentionedJid: [m.sender],
       externalAdReply: {
-        title: 'ℒ𝒜𝒵𝒜𝒞𝒦 ℳ𝒟 𝒜ℒℐ𝒱ℰ',
-        body: 'Lazack md',
+        title: 'Gcyber Md',
+        body: 'Gcyber md',
         thumbnailUrl: img,
         sourceUrl: 'https://chat.whatsapp.com/IIpL6gf6dcq4ial8gaJLE9',
         mediaType: 1,
