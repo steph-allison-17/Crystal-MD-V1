@@ -94,7 +94,7 @@ let msg = generateWAMessageFromContent(m.chat, {
                                 "{\"display_text\":\"SECOND MENU ⚔️\",\"id\":\".menu2\"}"
                  },
                   {
-                  "name": "cta_url",
+                  "name": "quick_reply",
                   "buttonParamsJson": "{\"display_text\":\"OWNER 🌹\",\"Url\":\"https://wa.me/message/255622053093\"}"
                   },
                   {
