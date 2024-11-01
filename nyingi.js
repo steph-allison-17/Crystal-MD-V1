@@ -87,7 +87,7 @@ async function start(file) {
 
     fs.watchFile(args[0], () => {
       fs.unwatchFile(args[0])
-      start('lazack.js')
+      start('gmax.js')
     })
   })
 
@@ -95,7 +95,7 @@ async function start(file) {
     console.error(chalk.red(`Error: ${err}`))
     p.kill()
     isRunning = false
-    start('lazack.js')
+    start('gmax.js')
   })
 
   const pluginsFolder = path.join(path.dirname(currentFilePath), 'lazackcmds')
@@ -121,11 +121,11 @@ start('gmax.js')
 
 process.on('unhandledRejection', () => {
   console.error(chalk.red(`Unhandled promise rejection. Bot will restart...`))
-  start('lazack.js')
+  start('gmax.js')
 })
 
 process.on('exit', code => {
   console.error(chalk.red(`Exited with code: ${code}`))
   console.error(chalk.red(`Bot will restart...`))
-  start('lazack.js')
+  start('gmax.js')
 })
