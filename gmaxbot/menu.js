@@ -48,7 +48,7 @@ let str = ` ┏━━━━━━━━━━━━━━┈⊷
 > 🤖 ʙᴏᴛ ɴᴀᴍᴇ: 𝐋𝐚𝐳𝐚𝐜𝐤-𝐌-𝐃𝐞𝐯𝐢𝐜𝐞
 > 📍 ᴠᴇʀꜱɪᴏɴ: 1.0.1
 > 👨‍💻 ᴏᴡɴᴇʀ : 𝐋𝐚𝐳𝐚𝐜𝐤      
-> 👤 ɴᴜᴍʙᴇʀ: 255734980103
+> 👤 ɴᴜᴍʙᴇʀ: 255622053093
 > 📡 ᴘʟᴀᴛғᴏʀᴍ: *𝙇𝙄𝙉𝙐𝙓*
 > 🛡 ᴍᴏᴅᴇ: *ℙ𝕌𝔹𝕃𝕀ℂ*
 > 💫 ᴘʀᴇғɪx: [ . ]
@@ -99,7 +99,7 @@ let msg = generateWAMessageFromContent(m.chat, {
                   },
                   {
                   "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"BOT SC 🎉\",\"url\":\"https://github.com/Lazack28/Lazack-Device\",\"merchant_url\":\"https://github.com/Lazack28/Lazack-Device\"}"
+                 "buttonParamsJson": "{\"display_text\":\"BOT SC 🎉\",\"url\":\"https://github.com/Gmaxhacker1/GCYBER-Md-v1\",\"merchant_url\":\"https://github.com/Gmaxhacker1/GCYBER-Md-v1\"}"
               }
            ],
           })
