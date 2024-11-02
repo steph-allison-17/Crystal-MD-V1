@@ -45,9 +45,9 @@ let greeting = ucapan()
 let taguser = '@' + m.sender.split("@s.whatsapp.net")[0]
 
 let str = ` ┏━━━━━━━━━━━━━━┈⊷
-> 🤖 ʙᴏᴛ ɴᴀᴍᴇ: 𝐋𝐚𝐳𝐚𝐜𝐤-𝐌-𝐃𝐞𝐯𝐢𝐜𝐞
-> 📍 ᴠᴇʀꜱɪᴏɴ: 1.0.1
-> 👨‍💻 ᴏᴡɴᴇʀ : 𝐋𝐚𝐳𝐚𝐜𝐤      
+> 🤖 ʙᴏᴛ ɴᴀᴍᴇ: 𝗚𝗖𝗬𝗕𝗘𝗥-𝗠𝗗
+> 📍 ᴠᴇʀꜱɪᴏɴ: 1.0.0
+> 👨‍💻 ᴏᴡɴᴇʀ : Mr Gmax      
 > 👤 ɴᴜᴍʙᴇʀ: 255622053093
 > 📡 ᴘʟᴀᴛғᴏʀᴍ: *𝙇𝙄𝙉𝙐𝙓*
 > 🛡 ᴍᴏᴅᴇ: *ℙ𝕌𝔹𝕃𝕀ℂ*
@@ -75,7 +75,7 @@ let msg = generateWAMessageFromContent(m.chat, {
           }),
 
           header: proto.Message.InteractiveMessage.Header.create({
-          ...(await prepareWAMessageMedia({ image : { url: 'https://i.imgur.com/WlBJdfh.jpeg'}}, { upload: conn.waUploadToServer})), 
+          ...(await prepareWAMessageMedia({ image : { url: 'https://i.imgur.com/skWGdnb.jpeg'}}, { upload: conn.waUploadToServer})), 
             title: null,
             subtitle: null,
             hasMediaAttachment: false
