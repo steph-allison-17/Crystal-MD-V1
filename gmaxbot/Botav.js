@@ -5,7 +5,7 @@ let handler = async (m, { conn }) => {
   let av = `./jusorts/${pickRandom(['lazack', 'mtaju'])}.mp3`
 
 
-conn.sendButton(m.chat, `*HOLA FROM BOT 𝐆𝐂𝐘𝐁𝐄𝐑*      
+conn.sendButton(m.chat, `*HOLA FROM BOT LAZACK*      
     morning or evening @${m.sender.split('@')[0]} 
     You called me what is youre problem bro? 😇
   `.trim(), igfg, null, [['OWNER HELP', '.grp'],['GET SC', '.repo']] , m, { mentions: [m.sender] })
