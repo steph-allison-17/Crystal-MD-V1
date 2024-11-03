@@ -2,7 +2,7 @@ let handler = async m =>
   m.reply(
     `
 
-≡ 𝐋𝐀𝐙𝐀𝐂𝐊-𝐌𝐃 GROUPS
+≡ GMAX BOT GROUPS
 
 ─────────────
 ▢ Join public bot group and support
