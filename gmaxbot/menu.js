@@ -39,7 +39,7 @@ let handler = async (m, { conn, usedPrefix }) => {
                         text: "Use The Below Buttons"
                     }),
                     header: proto.Message.InteractiveMessage.Header.create({
-                        ...(await prepareWAMessageMedia({ image: { url: './assets/Gmaxhacker1.jpg' } }, { upload: conn.waUploadToServer })),
+                        ...(await prepareWAMessageMedia({ image: { url: './jusorts/Gmaxhacker1.jpg' } }, { upload: conn.waUploadToServer })),
                         title: null,
                         subtitle: null,
                         hasMediaAttachment: false
@@ -122,7 +122,7 @@ function clockString(ms) {
 }
 
 function ucapan() {
-    const time = moment.tz('Africa/Dodoma').format('HH');
+    const time = moment.tz('Africa/Nairobi').format('HH');
     let res = "happy early in the day☀️";
     if (time >= 4) {
         res = "Good Morning 🥱";
