@@ -1,28 +1,37 @@
-/*import { youtubedl, youtubedlv2 } from '@bochilteam/scraper'
+import axios from 'axios'
 
-let handler = async (m, { conn, text, args, isPrems, isOwner, usedPrefix, command }) => {
-  if (!args || !args[0]) throw `✳️ Example :\n${usedPrefix + command} https://youtu.be/YzkTFFwxtXI`
-  if (!args[0].match(/youtu/gi)) throw `❎ Verify that it is a YouTube link.`
-
-  m.react(rwait)
+let handler = async (m, { conn, text }) => {
+  if (!text) throw '✳️ What do you want me to search for on YouTube?'
 
   try {
-    let q = '128kbps'
-    let v = args[0]
-    const yt = await youtubedl(v).catch(async () => await youtubedlv2(v))
-    const dl_url = await yt.audio[q].download()
-    const title = await yt.title
+    const query = encodeURIComponent(text)
+    const response = await axios.get(`https://weeb-api.vercel.app/ytsearch?query=${query}`)
+    const results = response.data
 
-    conn.sendFile(m.chat, dl_url, title + '.mp3', null, m, false, { mimetype: 'audio/mpeg' })
+    if (results.length === 0) {
+      throw 'No results found for the given query.'
+    }
 
-    m.react(xmoji)
-  } catch {
-    await m.reply(`❎ Error: Could not download the audio.`)
+    const firstResult = results[0]
+
+    const message = `
+乂 ${firstResult.title}
+乂 *Link* : ${firstResult.url}
+乂 *Duration* : ${firstResult.timestamp}
+乂 *Published :* ${firstResult.ago}
+乂 *Views:* ${firstResult.views}
+
+    `
+
+    conn.sendFile(m.chat, firstResult.thumbnail, 'yts.jpeg', message, m)
+  } catch (error) {
+    console.error(error)
+    throw 'An error occurred while searching for YouTube videos.'
   }
 }
 
-handler.help = ['ytmp3 <url>']
+handler.help = ['ytsearch']
 handler.tags = ['downloader']
-handler.command = ['ytmp3', 'yta']
+handler.command = ['ytsearch', 'yts']
 
 export default handler
