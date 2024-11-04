@@ -1,4 +1,4 @@
-import { generateWAMessageFromContent } from '@whiskeysockets/baileys'
+/* import { generateWAMessageFromContent } from '@whiskeysockets/baileys'
 const {
     proto,
     generateWAMessage,
@@ -144,3 +144,5 @@ function clockString(ms) {
       }
       return res
     }
+
+    */
