@@ -137,7 +137,9 @@ function ucapan() {
         res = "Good Night 🌙";
     }
     return res;
-            }
+
+}  
+
 
 /* import { generateWAMessageFromContent } from '@whiskeysockets/baileys'
 const {
