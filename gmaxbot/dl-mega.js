@@ -1,4 +1,4 @@
-/* import { File } from 'megajs'
+import { File } from 'megajs'
 import path from 'path'
 
 let handler = async (m, { conn, args, usedPrefix, text, command }) => {
@@ -55,5 +55,3 @@ function formatBytes(bytes) {
 
   return parseFloat((bytes / Math.pow(k, i)).toFixed(2)) + ' ' + sizes[i]
 }
-
-*/
