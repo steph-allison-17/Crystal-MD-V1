@@ -86,7 +86,7 @@ let handler = async (m, { conn, usedPrefix }) => {
                                 "name": "cta_url",
                                 "buttonParamsJson": JSON.stringify({
                                     "display_text": "OWNER 🌟",
-                                    "url": "https://wa.me/message/HA35ZL76JSHJB1"
+                                    "url": "https://wa.me/255622053093"
                                 })
                             },
                             {
