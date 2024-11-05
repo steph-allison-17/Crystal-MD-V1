@@ -1,60 +1,84 @@
-import ytdl from 'ytdl-core';
-import { createWriteStream } from 'fs';
-import { unlink } from 'fs/promises';
+import fetch from 'node-fetch';
+import pkg from 'nayan-media-downloader';
+const { ytdown } = pkg;
 
-let handler = async (m, { conn, args }) => {
-    if (!args[0]) throw '✳️ Please provide a YouTube URL';
-    
+const fetchWithRetry = async (url, options, retries = 3) => {
+    for (let i = 0; i < retries; i++) {
+        const response = await fetch(url, options);
+        if (response.ok) return response;
+        console.log(`Retrying... (${i + 1})`);
+    }
+    throw new Error('Failed to fetch media content after retries');
+};
+
+const handler = async (m, { args, conn, usedprefix }) => {
+    // Check if a URL was provided
+    if (!args.length) {
+        await m.reply('Please provide a YouTube URL.');
+        return;
+    }
+
+    const url = args.join(' '); // Join arguments to handle spaces in URLs
+    const youtubeRegex = /^(https?:\/\/)?(www\.)?(youtube\.com|youtu\.be)\/.+$/;
+
+    // Validate the URL format
+    if (!youtubeRegex.test(url)) {
+        await m.react('❌'); // React with a cross emoji for invalid URL
+        await m.reply('Invalid YouTube URL. Please provide a valid URL.');
+        return;
+    }
+
+    await m.react('⏳'); // React with a loading emoji
+
     try {
-        m.react('⏳');
-        const url = args[0];
-        const info = await ytdl.getInfo(url);
-        const title = info.videoDetails.title;
-        const fileName = `${Date.now()}.mp4`;
+        // Fetch video details with ytdown
+        const response = await ytdown(url);
+        console.log('API Response:', response); // Log the API response
 
-        // Send a status message
-        await conn.reply(m.chat, '🎥 Downloading video...', m);
+        if (!response || !response.data) {
+            throw new Error('Invalid response from the downloader.');
+        }
 
-        // Download video
-        const stream = ytdl(url, { 
-            quality: 'highest',
-            filter: 'videoandaudio'
-        });
+        const videoUrl = response.data.video_hd; // Use HD URL
+        if (!videoUrl) {
+            throw new Error('HD video URL not found.');
+        }
 
-        const writeStream = createWriteStream(fileName);
-        stream.pipe(writeStream);
+        const title = response.data.title || 'video';
+        const caption = `𝘗𝘖𝘞𝘌𝘙𝘌𝘋 𝘉𝘠 © 𝘜𝘓𝘛𝘙𝘈-𝘔𝘋`;
 
-        writeStream.on('finish', async () => {
-            try {
-                // Send the video file
-                await conn.sendFile(
-                    m.chat,
-                    fileName,
-                    `${title}.mp4`,
-                    title,
-                    m,
-                    false,
-                    { mimetype: 'video/mp4' }
-                );
-
-                // Clean up the temporary file
-                await unlink(fileName);
-                m.react('✅');
-            } catch (err) {
-                console.error('Error sending file:', err);
-                throw 'Failed to send video file';
+        // Fetch the video file with retry
+        const mediaResponse = await fetchWithRetry(videoUrl, {
+            headers: {
+                'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36',
+                'Accept': 'application/json, text/plain, */*'
             }
         });
 
+        const contentType = mediaResponse.headers.get('content-type');
+        if (!contentType || !contentType.includes('video')) {
+            throw new Error('Invalid content type received');
+        }
+
+        const arrayBuffer = await mediaResponse.arrayBuffer();
+        const mediaBuffer = Buffer.from(arrayBuffer);
+        if (mediaBuffer.length === 0) throw new Error('Downloaded file is empty');
+
+        // Send the video file
+        await conn.sendFile(m.chat, mediaBuffer, `null`, caption, m, false, {
+            mimetype: 'video/mp4'
+        });
+
+        await m.react('✅'); // React with a checkmark emoji for success
     } catch (error) {
-        console.error('Error in ytv handler:', error);
-        m.react('❌');
-        throw 'Failed to download video';
+        console.error('Error fetching video:', error.message, error.stack);
+        await m.reply('An error occurred while fetching the video. Please try again later.');
+        await m.react('❌'); // React with a cross emoji for errors
     }
 };
 
-handler.help = ['ytv'];
+handler.help = ['ytmp4', 'ytv'];
 handler.tags = ['dl'];
-handler.command = ['ytv', 'ytmp4'];
+handler.command = ['ytmp4', 'ytv'];
 
 export default handler;
