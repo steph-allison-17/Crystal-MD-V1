@@ -1,0 +1,15 @@
+{
+  "name": "node-starter",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "yt-search": "^2.10.4",
+    "ytdl-core": "^4.11.5",
+    "fluent-ffmpeg": "^2.1.2",
+    "@ffmpeg-installer/ffmpeg": "^1.1.0"
+  }
+}
