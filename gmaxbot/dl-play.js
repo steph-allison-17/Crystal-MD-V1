@@ -22,7 +22,9 @@ let handler = async (m, { conn, command, text, usedPrefix }) => {
 
         await conn.sendButton(m.chat, play, null, null, [
             ['🎶 MP3', `${usedPrefix}yta ${url}`],
-            ['🎥 MP4', `${usedPrefix}ytv ${url}`]
+            ['🎥 MP4', `${usedPrefix}ytv ${url}`],
+            ["💗 SCRIPT", `${usedPrefix}repo`],
+            ["💕 MENU", `${usedPrefix}menu`],
         ], m, { mentions: [m.sender] });
 
     } catch (error) {
