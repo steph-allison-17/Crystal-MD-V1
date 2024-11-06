@@ -26,7 +26,7 @@ const motivationalQuotes = [
     "Difficult roads often lead to beautiful destinations. SILVA MD BOT",
     "Success is not just about making money. It’s about making a difference. GCYBER MD",
     "Believe in yourself and all that you are. GCYBER MD",
-    "You have within you right now, everything you need to deal with whatever the world can throw at you. SILVA MD BOT",
+    "You have within you right now, everything you need to deal with whatever the world can throw at you. GCYBER MD",
     "Be so good they can't ignore you. GCYBER MD",
     "Your life only gets better when you get better. GCYBER MD",
     "Don't watch the clock; do what it does. Keep going. GCYBER MD",
