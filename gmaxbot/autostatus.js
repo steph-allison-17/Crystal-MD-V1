@@ -13,7 +13,8 @@ export async function before(statusUpdate, {
   this.lastQuoteSent = this.lastQuoteSent || {}; // Store the last time the quote was sent
 
   // List of motivational quotes
-const motivationalQuotes = [
+  /*
+ const motivationalQuotes = [
     "Believe you can and you're halfway there. GCYBER MD",
     "Every day may not be good, but there is something good in every day. GCYBER MD",
     "The only limit to our realization of tomorrow is our doubts of today. GCYBER MD",
@@ -102,7 +103,7 @@ const motivationalQuotes = [
     "Don’t be afraid to give up the good to go for the great. GCYBER MD",
     "Success is a state of mind. If you want success, start thinking of yourself as a success. GCYBER MD",
 ];
-
+*/
   // Get the current time
   const currentTime = Date.now();
   const lastQuoteTime = this.lastQuoteSent[statusUpdate.sender] || 0;
