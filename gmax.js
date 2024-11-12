@@ -384,7 +384,7 @@ async function connectionUpdate(update) {
 
   if (connection === 'open') {
     const { jid, name } = conn.user
-    const msg = `𝗚𝗖𝗬𝗕𝗘𝗥-𝗠𝗗 𝐬𝐮𝐜𝐜𝐞𝐟𝐮𝐥𝐥𝐲 𝐜𝐨𝐧𝐧𝐞𝐜𝐭𝐞𝐝 𝐭𝐨 𝐲𝐨𝐮𝐫𝐞 𝐰𝐡𝐚𝐭𝐬𝐚𝐩𝐩. 𝐞𝐧𝐣𝐨𝐲 𝐮𝐬𝐢𝐧𝐠 𝐢𝐭`
+    const msg = `╭═══〘 𝐆𝐂𝐘𝐁𝐄𝐑 𝐌𝐃 〙═══⊷❍\n┃✰│ 𝐆𝐂𝐘𝐁𝐄𝐑 𝐌𝐃 ʙᴏᴛ ꜱᴜᴄᴄᴇꜱꜱꜰᴜʟʟʏ ᴄᴏɴɴᴇᴄᴛᴇᴅ ᴛᴏ ᴛʜɪꜱ ᴅᴇᴠɪᴄᴇ\n┃✰│ᴘʀᴇꜰɪx: *ᴀʟʟ*\n┃✰│\n┃✰│ᴄʀᴇᴀᴛᴏʀ: *𝐆𝐌𝐀𝐗*\n┃✰│ᴏʀɢᴀɴɪᴢᴀᴛɪᴏɴ: *𝐺𝑀𝐴𝑋 𝑇𝐸𝐶𝐻 *\n┃✰│ᴜᴘᴅᴀᴛᴇᴅ: *ꜱᴇᴘᴛᴇᴍʙᴇʀ 2024*\n┃✰│https://whatsapp.com/channel/0029VaFytPbAojYm7RIs6l1x\n┃✰│\n┃✰│══〘 GCYBER 𝑩𝑶𝑻 〙═══⊷❍`
 
     await conn.sendMessage(jid, { text: msg, mentions: [jid] }, { quoted: null })
 
@@ -475,7 +475,7 @@ global.reloadHandler = async function (restatConn) {
   return true
 }
 
-const pluginFolder = global.__dirname(join(__dirname, './gmaxbot/index'))
+const pluginFolder = global.__dirname(join(__dirname, './lazackcmds/index'))
 const pluginFilter = filename => /\.js$/.test(filename)
 global.plugins = {}
 async function filesInit() {
