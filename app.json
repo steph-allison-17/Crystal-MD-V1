@@ -1,24 +1,29 @@
 {
-  "name": "Gmax Tech ",
-  "description": " Whatsapp botz made by team Gmax.",
+  "name": "GCYBER MD",
+  "description": " Whatsapp bot developed by Gmax.",
   "keywords": [
-    "whatsapp bot"
+    "whatsapp"
   ],
-  "repository": "https://github.com/Gmaxhacker1/GCYBER-BOT",
+  "repository": "https://github.com/Gmaxhacker1/GCYBER-Md-v1",
   "stack": "container",
   "env": {
     "OWNERS": {
-      "description": "owner numbers",
+      "description": "replace with your number",
+      "required": true,
+      "value": "255622053093"
+    },
+    "BOT_NUMBER": {
+      "description": "replace with your number",
       "required": true,
       "value": "255622053093"
     },
     "BOTNAME": {
       "description": "Give your BOT a name",
       "required": true,
-      "value": "𝙂𝘾𝙔𝘽𝙀𝙍-𝘽𝙊𝙏"
+      "value": "GCYBER-MD"
     },
     "DATABASE_URL": {
-      "description": "your mongodb database url",
+      "description": "your mongodb or database url",
       "required": false,
       "value": ""
     },
