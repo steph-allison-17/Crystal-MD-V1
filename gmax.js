@@ -103,7 +103,7 @@ async function gandu() {
       process.exit(1)
     } else {
       console.log(`${endi}`)
-      console.log(chalk.bgBlack(chalk.redBright('Starting Lazack Device')))
+      console.log(chalk.bgBlack(chalk.redBright('Starting  GCYBER MD')))
     }
   } catch (error) {
     console.error('Error:', error)
@@ -277,7 +277,7 @@ if (pairingCode && !conn.authState.creds.registered) {
 
     if (!Object.keys(PHONENUMBER_MCC).some(v => phoneNumber.startsWith(v))) {
       console.log(
-        chalk.bgBlack(chalk.redBright("Start with your country's WhatsApp code, Example : 62xxx"))
+        chalk.bgBlack(chalk.redBright("Start with your country's WhatsApp code, Example : 255xxx"))
       )
       process.exit(0)
     }
