@@ -15,7 +15,7 @@
 
 
 
-<a href="https://cybersession.onrender.com" target="_blank"><img alt='PAIRING' src='https://img.shields.io/badge/PAIRING CODE-magenta?style=for-the-badge&logo=opencv&logoColor=white'/></a>
+<a href="https://wa-session-1.onrender.com/" target="_blank"><img alt='PAIRING' src='https://img.shields.io/badge/PAIRING CODE-magenta?style=for-the-badge&logo=opencv&logoColor=white'/></a>
 
 
 
