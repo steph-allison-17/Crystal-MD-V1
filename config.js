@@ -6,25 +6,26 @@ import fs from 'fs'
 import dotenv from 'dotenv'
 dotenv.config()
 
-const defaultOwner = '255622053093';
+const ownervb = process.env.OWNERS || "25522053093"
 
-
-// Check for the OWNERS environment variable; if not found, use the default
-const ownervb = process.env.OWNERS || defaultOwner;
 
 const ownerlist = ownervb.split(';');
 
 global.owner = [];
-for (let i = 0; i < ownerlist.length; i++) {
-    global.owner.push([ownerlist[i], true]);
+for (let i = 0; i < ownerlist.length; i += 2) {
+    const owner = [
+        ownerlist[i],            
+        ownerlist[i + 1],         
+        true                        
+    ];
+    global.owner.push(owner);
 }
-//
-global.botname = process.env.BOTNAME || 'GCYBER-MD';
-global.botNumber = process.env.BOT_NUMBER || '255622053093';
 
-global.mods = []
-global.prems = []
-global.allowed = ['255622053093', '255753853473']
+//global.pairingNumber = "" //put your bot number here
+
+global.mods = ['25522053093', '255753853473']
+global.prems = ['25522053093', '255753853473', '255753853473']
+global.allowed = ['25522053093', '255753853473']
 global.keysZens = ['c2459db922', '37CC845916', '6fb0eff124']
 global.keysxxx = keysZens[Math.floor(keysZens.length * Math.random())]
 global.keysxteammm = [
@@ -41,9 +42,6 @@ global.keysneoxrrr = ['5VC9rvNx', 'cfALv5']
 global.keysneoxr = keysneoxrrr[Math.floor(keysneoxrrr.length * Math.random())]
 global.lolkeysapi = ['GataDios']
 
-global.canal = 'https://whatsapp.com/channel/0029VaFytPbAojYm7RIs6l1x'
-
-
 global.APIs = {
   // API Prefix
   // name: 'https://website'
@@ -57,7 +55,7 @@ global.APIs = {
   akuari2: 'https://apimu.my.id',
   nrtm: 'https://fg-nrtm.ddns.net',
   bg: 'http://bochil.ddns.net',
-  fgmods: 'https://api.fgmods.xyz',
+  fgmods: 'https://api-fgmods.ddns.net',
 }
 global.APIKeys = {
   // APIKey Here
@@ -67,27 +65,29 @@ global.APIKeys = {
   'https://api.neoxr.my.id': `${keysneoxr}`,
   'https://violetics.pw': 'beta',
   'https://zenzapis.xyz': `${keysxxx}`,
-  'https://api.fgmods.xyz': 'm2XBbNvz',
+  'https://api-fgmods.ddns.net': 'fg-dylux',
 }
 
 // Sticker WM
+global.botname = process.env.BOTNAME
 global.premium = 'true'
-global.packname = 'GCYBER-MD'
-global.author = 'Mr Gmax'
-global.menuvid = 'https://i.imgur.com/2U2K9YA.mp4'
-global.igfg = ' Follow on Instagram\nhttps://www.instagram.com/nyingi_official'
-global.dygp = 'https://whatsapp.com/channel/0029VaFytPbAojYm7RIs6l1x'
+global.packname = 'gmax'
+global.author = 'gmax'
+global.menuvid = ''
+global.igfg = ''
+global.dygp = ''
 global.fgsc = 'https://github.com/Gmaxhacker1/GCYBER-Md-v1'
-global.fgyt = 'https://youtube.com/@gmaxtv1661'
-global.fglog = 'https://i.ibb.co/G2dh9cB/qasim.jpg'
+global.fgyt = 'https://youtube.com/@gmaxtv2661'
+global.fgpyp = 'https://youtube.com/@gmaxtv1661'
+global.fglog = ''
 global.thumb = fs.readFileSync('./assets/𝐔𝐥𝐭𝐫𝐚.jpg')
 
-global.wait = '⏳'
-global.rwait = '⏳'
+global.wait = '*⌛ _GCYBER MD ANALYSING..._*\n*▰▰▰▱▱▱▱▱*'
+global.rwait = '⌛'
 global.dmoji = '🤭'
 global.done = '✅'
 global.error = '❌'
-global.xmoji = '🤩'
+global.xmoji = '🔥'
 
 global.multiplier = 69
 global.maxwarn = '3'
