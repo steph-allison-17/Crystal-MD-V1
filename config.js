@@ -80,7 +80,7 @@ global.dygp = 'https://whatsapp.com/channel/0029VaFytPbAojYm7RIs6l1x'
 global.fgsc = 'https://github.com/Gmaxhacker1/GCYBER-Md-v1'
 global.fgyt = 'https://youtube.com/@gmaxtv1661'
 global.fglog = 'https://i.ibb.co/G2dh9cB/qasim.jpg'
-global.thumb = fs.readFileSync('./assets/qasim.jpg')
+global.thumb = fs.readFileSync('./assets/𝐔𝐥𝐭𝐫𝐚.jpg')
 
 global.wait = '⏳'
 global.rwait = '⏳'
