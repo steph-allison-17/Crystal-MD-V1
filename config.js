@@ -29,7 +29,6 @@ global.allowed = ['25522053093', '255753853473']
 global.keysZens = ['c2459db922', '37CC845916', '6fb0eff124']
 global.keysxxx = keysZens[Math.floor(keysZens.length * Math.random())]
 global.keysxteammm = [
-global.canal = ['https://chat.whatsapp.com/Ji4SkX7GLEWAhPXVtChbg8']
   '29d4b59a4aa687ca',
   '5LTV57azwaid7dXfz5fzJu',
   'cb15ed422c71a2fb',
@@ -42,6 +41,7 @@ global.keysxteam = keysxteammm[Math.floor(keysxteammm.length * Math.random())]
 global.keysneoxrrr = ['5VC9rvNx', 'cfALv5']
 global.keysneoxr = keysneoxrrr[Math.floor(keysneoxrrr.length * Math.random())]
 global.lolkeysapi = ['GataDios']
+global.canal = ['https://chat.whatsapp.com/Ji4SkX7GLEWAhPXVtChbg8']
 
 global.APIs = {
   // API Prefix
