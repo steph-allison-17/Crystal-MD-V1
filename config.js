@@ -81,7 +81,7 @@ global.fgsc = 'https://github.com/Gmaxhacker1/GCYBER-Md-v1'
 global.fgyt = 'https://youtube.com/@gmaxtv2661'
 global.fgpyp = 'https://youtube.com/@gmaxtv1661'
 global.fglog = ''
-global.thumb = fs.readFileSync('./assets/𝐔𝐥𝐭𝐫𝐚.jpg')
+global.thumb = fs.readFileSync('./assets/Ultra.jpg')
 
 global.wait = '*⌛ _GCYBER MD ANALYSING..._*\n*▰▰▰▱▱▱▱▱*'
 global.rwait = '⌛'
