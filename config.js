@@ -6,7 +6,7 @@ import fs from 'fs'
 import dotenv from 'dotenv'
 dotenv.config()
 
-const ownervb = process.env.OWNERS || "25522053093"
+const ownervb = process.env.OWNERS || "2349051080824"
 
 
 const ownerlist = ownervb.split(';');
@@ -21,11 +21,11 @@ for (let i = 0; i < ownerlist.length; i += 2) {
     global.owner.push(owner);
 }
 
-//global.pairingNumber = "" //put your bot number here
+//global.pairingNumber = "2349051080824" //put your bot number here
 
-global.mods = ['25522053093', '255753853473']
-global.prems = ['25522053093', '255753853473', '255753853473']
-global.allowed = ['25522053093', '255753853473']
+global.mods = ['2349051080824']
+global.prems = ['2349051080824']
+global.allowed = ['2349051080824']
 global.keysZens = ['c2459db922', '37CC845916', '6fb0eff124']
 global.keysxxx = keysZens[Math.floor(keysZens.length * Math.random())]
 global.keysxteammm = [
@@ -83,7 +83,7 @@ global.fgpyp = 'https://youtube.com/@gmaxtv1661'
 global.fglog = ''
 global.thumb = fs.readFileSync('./assets/Ultra.jpg')
 
-global.wait = '*⌛ _GCYBER MD ANALYSING..._*\n*▰▰▰▱▱▱▱▱*'
+global.wait = '*⌛ Crystal-MD-V1 ANALYSING..._*\n*▰▰▰▱▱▱▱▱*'
 global.rwait = '⌛'
 global.dmoji = '🤭'
 global.done = '✅'
